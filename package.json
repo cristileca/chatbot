@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.9.3",
+    "@trigger.dev/sdk": "3.3.16",
+    "openai": "^4.84.1"
+  },
+  "devDependencies": {
+    "@trigger.dev/build": "3.3.16"
+  }
+}
