@@ -38,9 +38,9 @@ npm install
 
 Create a .env file and add your API keys:
 
-OPENAI_API_KEY=your-openai-key
-MONGODB_URI=your-mongodb-connection-string
-TRIGGER_API_KEY=your-trigger-dev-key
+OPENAI_API_KEY=your-openai-key  
+MONGODB_URI=your-mongodb-connection-string  
+TRIGGER_API_KEY=your-trigger-dev-key  
 
 4. Start the Server
 
