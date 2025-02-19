@@ -1,10 +1,16 @@
 {
+  "type": "module",
   "dependencies": {
     "@google-cloud/vertexai": "^1.9.3",
     "@trigger.dev/sdk": "3.3.16",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.1",
     "openai": "^4.84.1"
   },
   "devDependencies": {
-    "@trigger.dev/build": "3.3.16"
+    "@trigger.dev/build": "3.3.16",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^22.13.4"
   }
 }
