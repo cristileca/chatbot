@@ -59,7 +59,7 @@ Retool Workflow Breakdown:
 query3: Orchestrates the workflow by calling query2 (sends the message) and query1 (retrieves conversation history).  
 query2: Sends the message to the Trigger.dev trigger.  
 query1: Fetches the conversation history from MongoDB.  
-When the "Send Message" button is pressed in Retool, query3 runs to send the message, fetch updated conversation data, and update the UI.  
+When the "Send Message" button is pressed in Retool, query3 runs to send the message, fetches updated conversation data, and updates the UI.  
 
 🔧 API Endpoints  
 
