@@ -65,7 +65,7 @@ When the "Send Message" button is pressed in Retool, query3 runs to send the mes
 
 Send a Message from Retool  
 
-POST [/chat](https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger)  
+POST [/chat](https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger)    
 
 Request Body:  
 
@@ -77,10 +77,5 @@ Request Body:
 }  
 
 Retrieve Conversation History using the retoool build in mongodb api tool  
-
-📝 To-Do/Problems  
-
-Optimize communication between MongoDB and OpenAI to generate faster responses, at this time the chat1 takes about 10s to respond back to the user.     
-Implement chat sessions to start a new chat when someone new opens the chat page.  
 
 
