@@ -65,7 +65,7 @@ When the "Send Message" button is pressed in Retool, query3 runs to send the mes
 
 Send a Message from Retool  
 
-POST [/chat](https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger)    
+POST https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger   
 
 Request Body:  
 
