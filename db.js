@@ -5,7 +5,7 @@ dotenv.config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://mariancristianleca:NHuAQJOb1dnmGrv0@chatbot.k8vyl.mongodb.net/?retryWrites=true&w=majority&appName=Chatbot");
+    await mongoose.connect("mongodb-Api-key");
     console.log("✅ MongoDB Connected");
   } catch (err) {
     console.error("❌ MongoDB Connection Error:", err);
