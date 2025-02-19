@@ -48,39 +48,39 @@ npx trigger.dev@latest  dev
 
 ⚡ Usage
 
-Open the Retool app and interact with the chatbot.
-When a user sends a message, Retool triggers the workflow:
-Retool → Trigger.dev: Retool sends the user’s message to Trigger.dev via query2.
-Trigger.dev → OpenAI & MongoDB: Trigger.dev forwards the message to OpenAI, receives the AI response, and stores both the user message and the AI response in MongoDB.
-MongoDB → Retool: Retool fetches the updated conversation history using query1.
-UI Update: The response is displayed in the Retool chat interface.
-Retool Workflow Breakdown:
+Open the Retool app and interact with the chatbot.  
+When a user sends a message, Retool triggers the workflow:  
+Retool → Trigger.dev: Retool sends the user’s message to Trigger.dev via query2.  
+Trigger.dev → OpenAI & MongoDB: Trigger.dev forwards the message to OpenAI, receives the AI response, and stores both the user message and the AI response in MongoDB.  
+MongoDB → Retool: Retool fetches the updated conversation history using query1.  
+UI Update: The response is displayed in the Retool chat interface.  
+Retool Workflow Breakdown:  
 
-query3: Orchestrates the workflow by calling query2 (sends the message) and query1 (retrieves conversation history).
-query2: Sends the message to the Trigger.dev trigger.
-query1: Fetches the conversation history from MongoDB.
-When the "Send Message" button is pressed in Retool, query3 runs to send the message, fetch updated conversation data, and update the UI.
+query3: Orchestrates the workflow by calling query2 (sends the message) and query1 (retrieves conversation history).  
+query2: Sends the message to the Trigger.dev trigger.  
+query1: Fetches the conversation history from MongoDB.  
+When the "Send Message" button is pressed in Retool, query3 runs to send the message, fetch updated conversation data, and update the UI.  
 
-🔧 API Endpoints
+🔧 API Endpoints  
 
-Send a Message from Retool
+Send a Message from Retool  
 
-POST [/chat](https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger)
+POST [/chat](https://api.trigger.dev/api/v1/tasks/<trigger_id>/trigger)  
 
-Request Body:
+Request Body:  
 
-{
-  "payload":{
-    "user_message": {{textInput1.value}},
-    "session_id": "caeeabe7-929a-4fa3-b6e5-851ab78ce0d9",
-  }
-}
+{  
+  "payload":{  
+    "user_message": {{textInput1.value}},  
+    "session_id": "caeeabe7-929a-4fa3-b6e5-851ab78ce0d9",  
+  }  
+}  
 
-Retrieve Conversation History using the retoool build in mongodb api tool
+Retrieve Conversation History using the retoool build in mongodb api tool  
 
-📝 To-Do/Problems
+📝 To-Do/Problems  
 
-Optimize communication between MongoDB and OpenAI to generate faster responses
-Implement chat sessions to start a new chat when someone new opens the chat page
+Optimize communication between MongoDB and OpenAI to generate faster responses, at this time the chat1 takes about 10s to respond back to the user.     
+Implement chat sessions to start a new chat when someone new opens the chat page.  
 
 
